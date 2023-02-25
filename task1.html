@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Write a “person” class to hold all the details. -->
+    <script>
+    class Person {            // creating class
+      
+        constructor(name,num,email,place) {
+          this.name = name;
+          this.num=num;
+          this.email=email;
+          this.place=place;
+        }
+      //
+         introduceSelf() {
+          console.log(`Hi! I'm ${this.name} my number is ${this.num} , my email id is "${this.email}" and i am from ${this.place}`);
+        }
+      
+      }
+      const per1 = new Person('Maruthi',9663458560,"maruthikj4@gmail.com","Davanagere");// creating object
+
+     per1.introduceSelf(); 
+
+    </script>
+</body>
+</html>

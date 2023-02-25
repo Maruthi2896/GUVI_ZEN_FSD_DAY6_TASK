@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+<body>
+    
+    <script>
+        // TASK:write a class to calculate the uber price.
+        class UberPrice{
+            constructor(distance){
+                this.distance=distance;
+                if(distance<20)
+                this.price= distance*15;
+                if(distance>=20 && distance<50)
+                this.price=distance*12;
+                if(distance>=50)
+                this.price=distance*10;
+
+                
+            }
+        }
+       var dis= prompt("Enter the distance covered")
+       var price=new UberPrice(dis);
+    alert(`The price for distance ${price.distance} is ${price.price}`)
+    </script>
+</body>
+</html>
